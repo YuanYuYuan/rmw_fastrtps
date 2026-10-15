@@ -1,0 +1,22 @@
+# repo version patch? : packages... (release tarballs from github.com/ros2-gbp/<repo>/archive/release/rolling/<pkg>/<version>.tar.gz)
+rosidl-release 5.1.3-1 : rosidl_adapter rosidl_cli rosidl_cmake rosidl_generator_c rosidl_generator_cpp rosidl_generator_type_description rosidl_parser rosidl_pycommon rosidl_runtime_c rosidl_runtime_cpp rosidl_typesupport_interface rosidl_typesupport_introspection_c rosidl_typesupport_introspection_cpp
+rosidl_core-release 0.5.0-1 : rosidl_core_generators rosidl_core_runtime
+rosidl_defaults-release 1.9.0-1 : rosidl_default_generators rosidl_default_runtime
+rosidl_dynamic_typesupport-release 0.5.0-1 : rosidl_dynamic_typesupport
+rosidl_dynamic_typesupport_fastrtps-release 0.6.0-1 : rosidl_dynamic_typesupport_fastrtps
+rosidl_python-release 0.27.0-1 : rosidl_generator_py
+rosidl_runtime_py-release 0.9.2-1 : rosidl_runtime_py
+rosidl_typesupport-release 3.5.0-1 : rosidl_typesupport_c rosidl_typesupport_cpp
+rosidl_typesupport_fastrtps-release 3.9.3-1 : rosidl_typesupport_fastrtps_c rosidl_typesupport_fastrtps_cpp
+rmw-release 7.11.2-1 : rmw rmw_implementation_cmake rmw_security_common
+rmw_dds_common-release 6.1.2-1 : rmw_dds_common
+rmw_implementation-release 3.2.1-1 : rmw_implementation
+rmw_fastrtps-release 9.4.5-1 : rmw_fastrtps_cpp rmw_fastrtps_shared_cpp
+rcl-release 10.5.2-1 : rcl rcl_yaml_param_parser
+rcl_interfaces-release 2.5.1-1 : action_msgs builtin_interfaces rcl_interfaces rosgraph_msgs service_msgs statistics_msgs type_description_interfaces
+common_interfaces-release 5.10.2-1 : geometry_msgs sensor_msgs std_msgs
+unique_identifier_msgs-release 2.9.0-1 : unique_identifier_msgs
+libstatistics_collector-release 3.0.0-1 : libstatistics_collector
+rclcpp-release 33.1.0-1 : rclcpp
+# patches: <pkg> <patchfile>
+PATCH rmw_fastrtps_shared_cpp patches/rmw-fastrtps-shared-cpp-9.4.5-collection-flag-backport.patch
