@@ -23,7 +23,7 @@ One `RESULT` line per run, in this form:
 RESULT row=<row> run=<n> count=<messages the legacy subscriber received in 15 s> matched=<largest live subscription count the publisher reported while it ran>
 ```
 
-The output of the run command, with 5 runs per row:
+Output, five runs of each row:
 
 ```
 RESULT row=T0 run=1 count=75 matched=1
