@@ -1,2 +1,2 @@
 # the pull request head: fix/forget-buffer-subscribers-that-leave of github.com/YuanYuYuan/rmw_fastrtps
-SOURCE https://github.com/YuanYuYuan/rmw_fastrtps/archive/ab677e36cd99fc7b04e109606f5be5f9e5dada4c.tar.gz rmw_fastrtps_cpp
+SOURCE https://github.com/YuanYuYuan/rmw_fastrtps/archive/9f7530797192f5f2726ccdfea021460ed2af6ccf.tar.gz rmw_fastrtps_cpp

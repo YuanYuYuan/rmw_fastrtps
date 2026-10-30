@@ -74,7 +74,7 @@ The legacy subscriber is the probe `sub_pc2` built against a stack without `rosi
 | Stack | Content |
 |---|---|
 | released | `docker.io/library/ros@sha256:4a258503925b89534e71ec3f3ec41248b8339e73477749eaf6b529ff202c6494` (`ros:rolling-ros-base`). It has `rmw_fastrtps_cpp` 9.6.0-1resolute.20260916.193506 and `rosidl_buffer` support. The `Dockerfile` pins the image by this digest |
-| fix | `rmw_fastrtps_cpp` built from commit [ab677e3](https://github.com/YuanYuYuan/rmw_fastrtps/commit/ab677e36cd99fc7b04e109606f5be5f9e5dada4c) of the branch `fix/forget-buffer-subscribers-that-leave`, installed in front of the released packages |
+| fix | `rmw_fastrtps_cpp` built from commit [9f75307](https://github.com/YuanYuYuan/rmw_fastrtps/commit/9f7530797192f5f2726ccdfea021460ed2af6ccf) of the branch `fix/forget-buffer-subscribers-that-leave`, installed in front of the released packages |
 | legacy | `rosidl` 5.1.3-1, `rosidl_typesupport_fastrtps` 3.9.3-1, `rmw_fastrtps` 9.4.5-1 and the other packages listed in `pins-before.txt`, built from release tarballs on top of the image. This stack has no `rosidl::Buffer` and never registers buffer information |
 
 The legacy stack needs one backport. The change [ros2/rmw_fastrtps#875](https://github.com/ros2/rmw_fastrtps/pull/875) landed in 9.4.6 together with the buffer feature. It changes the type object of every message with a sequence field. Without it a 9.4.5 endpoint and a 9.5.x or later endpoint never match. The backport is `patches/rmw-fastrtps-shared-cpp-9.4.5-collection-flag-backport.patch`. It does not touch the publish path. The source archive of every pinned package is listed with its sha256 in the build output.
